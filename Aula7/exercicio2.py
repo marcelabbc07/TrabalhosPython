@@ -1,5 +1,5 @@
 lista_jogadores=[]
-for i in range(0,10):
+for i in range(0,12):
     dicionario_jogadores={'nome':'','posicao':'','numero':'','pernaboa':''}
     lista_jogadores.append(dicionario_jogadores)
     dicionario_jogadores['nome']=(input('Digite seu nome:'))

@@ -1,0 +1,6 @@
+nome=(input('Digite seu nome:'))
+sobrenome=(input('Digite seu sobrenome:'))
+cpf=int(input('Digite seu CPF:'))
+rg=int(input('Digite seu RG:'))
+salario=float(input('Digite seu salário:'))
+print('Nome:{}\nSobrenome:{}\nCPF:{}\nRG:{}\nSalário:{}'.format(nome,sobrenome,cpf,rg,salario))

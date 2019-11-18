@@ -1,0 +1,1 @@
+print('1-Cadastrar\n2-Alterar\n3-Listar pessoas\n4-Sair')

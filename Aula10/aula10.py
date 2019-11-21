@@ -17,5 +17,5 @@ def calcular():
     r_resto=resto(n1,n2)
     r_raiz=raiz(n1,n2)
     resultados={'soma':r_soma,'sub':r_sub,'mult':r_mult,'div_int':r_div_int,'div_fra':r_div_fra,'resto':r_resto,'raiz':r_raiz}
-    return render_template('resultado.html',n1=n1,n2=n2,print(f"{resultados['soma']},{resultados['sub']},{resultados['mult']},{resultados['div_int']},{resultados['div_fra']},{resultados['resto']},{resultados['raiz']}"))
+    return render_template('resultado.html',n1=n1,n2=n2,f"{resultados['soma']},{resultados['sub']},{resultados['mult']},{resultados['div_int']},{resultados['div_fra']},{resultados['resto']},{resultados['raiz']}")
 app.run()

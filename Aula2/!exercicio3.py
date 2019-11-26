@@ -1,0 +1,4 @@
+titulo=
+edicao=
+autor=
+data=

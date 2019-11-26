@@ -1,0 +1,14 @@
+idade=19
+copiaidade=idade
+lista=['marcela',idade,'suco']
+tupla=(1,lista)
+print(idade)
+print(copiaidade)
+print(lista)
+print(tupla)
+idade=24
+lista[1]=27
+print(idade)
+print(copiaidade)
+print(lista)
+print(tupla)

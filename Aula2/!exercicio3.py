@@ -1,4 +1,0 @@
-titulo=
-edicao=
-autor=
-data=

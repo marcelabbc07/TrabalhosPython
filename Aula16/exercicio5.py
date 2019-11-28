@@ -1,6 +1,4 @@
-def raiz(tipo,n):
-    tipo=int(input('Digite o índice de raíz desejado:\n1-Raíz quadrada\n2-Raíz cúbica'))
-    n=int(input('Digite um número:'))
+def raiz():
     if(tipo==1):
         r=n**1/2
         raiz=r
@@ -11,4 +9,6 @@ def raiz(tipo,n):
         print(f'A raíz cúbica de {n} é:{raiz}')
     else:
         print('Digite um índice válido')
-raiz=raiz(tipo,n)
+tipo=int(input('Digite o índice de raíz desejado:\n1-Raíz quadrada\n2-Raíz cúbica\n'))
+n=int(input('Digite um número:'))
+raiz=raiz()

@@ -1,10 +1,10 @@
 def salvar(pessoa):
-    arquivo=open('dados.txt','a')
+    arquivo=open('Aula15/dados.txt','a')
     arquivo.write(f"{pessoa['nome']};{pessoa['sobrenome']};{pessoa['idade']}\n")
-    arquivo.close
+    arquivo.close()
 def ler():
     lista=[]
-    arquivo=open('dados.txt','r')
+    arquivo=open('Aula15/dados.txt','r')
     for linha in arquivo:
         linha=linha.strip()
         lista_linha=linha.split(';')

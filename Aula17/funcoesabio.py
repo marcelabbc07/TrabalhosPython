@@ -9,7 +9,11 @@ def cadastrar_cliente(numero):
     return lista
 def salvar_cliente():
     arquivo=open('Aula17/clientes.txt','a')
-    arquivo.write(lista)
+
+    for cliente in lista:
+        cliente_chave=list(cliente.keys())
+        salvar=f'{}'
+    arquivo.write()
     arquivo.close()
 
 

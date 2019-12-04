@@ -5,6 +5,13 @@
 # tipo da cerveja, o IBU da cerveja e o preço dela.
 # 1.2 Crie uma função que receba esta tupla e devolva uma lista com um dicionários referenciando cada uma destas 
 # cervejas.
+def recebe(cerveja):
+    cab=cerveja[0]
+    dados=cerveja[1:]
+    lista_cerva=[]
+    for dados_cerveja in dados:
+        dict_cerveja={cab[0]:dados_cerveja[0],cab[1]:dados_cerveja[1],cab[2]:dados_cerveja[2],cab[3]:dados_cerveja[3]}
+        lista_cerva.append(dict_cerveja)
 cerveja = (('Marca:', 'Tipo:', 'IBU:','Preço:'),
            ('Skol','IPA','ultra-leve',3.50),
            ('Brahma','lager','leve/media',3.45),
@@ -14,7 +21,5 @@ cerveja = (('Marca:', 'Tipo:', 'IBU:','Preço:'),
 cab=cerveja[0]
 dados=cerveja[1:]
 for dados_cerveja in dados:
-    print(f'{cab[0]}{dados_cerveja[0]}')
-    print(f'{cab[1]}{dados_cerveja[1]}')
-    print(f'{cab[2]}{dados_cerveja[2]}')
-    print(f'{cab[3]}{dados_cerveja[3]}')
+    for i in range(4):
+        print(f'{cab[i]}{dados_cerveja[i]}')

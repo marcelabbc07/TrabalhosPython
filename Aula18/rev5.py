@@ -19,14 +19,14 @@ lista = [
           ['carro','moto','vespa','caminhão','sprinter','kombi','fusca'],
           ['calça','camisa','japona','jaqueta','camiseta','bone','regata']
         ]
-a=0
-for lista_a in lista:
-  print(f'### POSIÇÃO {a} ### ')
-  a=a+1
-  for itens in lista_a:
-    print(itens)
-
-
+def lista_item(lista):
+  a=0
+  for lista_a in lista:
+    print(f'### POSIÇÃO {a} ### ')
+    a=a+1
+    for itens in lista_a:
+      print(itens)
+lista=lista_item(lista)
 # while True:
 #     b+=1
 #     a+=1

@@ -17,9 +17,25 @@
 # Com estas listas de  dicionários:
 # Monte um metodo que leia um valor e imprima (f-string) a quantidade de 
 # cada nota(s) e moeda(s) necessária(s) para devolver o troco ao cliente.
-nota = [{'Nota(s)':100.00},{'Nota(s)':50.00},{'Nota(s)':20.00},
-        {'Nota(s)':10.00},{'Nota(s)':5.00},{'Nota(s)':2.00},]
+# nota = [{'Nota(s)':100.00},{'Nota(s)':50.00},{'Nota(s)':20.00},
+#         {'Nota(s)':10.00},{'Nota(s)':5.00},{'Nota(s)':2.00},]
             
             
-moeda = [{'Moeda(s)':1.00},{'Moeda(s)':0.50},{'Moeda(s)':0.25},
-         {'Moeda(s)':0.10},{'Moeda(s)':0.05},{'Moeda(s)':0.01}]
+# moeda = [{'Moeda(s)':1.00},{'Moeda(s)':0.50},{'Moeda(s)':0.25},
+#          {'Moeda(s)':0.10},{'Moeda(s)':0.05},{'Moeda(s)':0.01}]
+
+# def ler_valor(valor,n100,n50,n20,n10,n5,n2,m1,m50,m25,m10,m05,m01):
+valor=float(input('Digite o valor:'))
+round(valor,2)
+n100=valor/100
+n50=n100/50
+n20=n50/20
+n10=n20/10
+n5=n10/5
+n2=n5/2
+
+print(f'Notas de 100:{n100}\nNotas de 50:{n50}\nNotas de 20:{n20}\nNotas de 10:{n10}\nNotas de 5:{n5}\nNotas de 2:{n2}')
+# print(f'Moedas de 1:{m1}\nMoedas de 0.50:{m50}\nMoedas de 0.25:{m25}\nMoedas de 0.10:{m10}\nMoedas de 0.05:{m05}\nMoedas de 0.01:{m01}')
+
+
+

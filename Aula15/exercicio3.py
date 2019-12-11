@@ -1,7 +1,7 @@
 def salvar(cervejas_funcao):
     arquivo=open('Aula15/cervejas.txt','a')
     arquivo.write(f"{cervejas_funcao['marca']};{cervejas_funcao['tipo']};{cervejas_funcao['teor']}\n")
-    arquivo.close
+    arquivo.close()
 def ler():
     lista=[]
     arquivo=open('Aula15/cervejas.txt','r')

@@ -23,3 +23,17 @@
 # mensagem dizendo "Erro! Digite numeor inteiro!"
 #
 # Imprima o valor
+n1=int(input('Digite o primeiro número:'))
+n2=int(input('Digite o segundo número:'))
+n3=int(input('Digite o terceiro número:'))
+n4=int(input('Digite o quarto número:'))
+n5=int(input('Digite o quinto número:'))
+lista=[]
+lista.append(n1)
+lista.append(n2)
+lista.append(n3)
+lista.append(n4)
+lista.append(n5)
+print(lista)
+for numero in lista:
+   

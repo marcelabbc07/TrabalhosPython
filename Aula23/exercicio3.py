@@ -24,3 +24,6 @@
 # Após atualizar, salvar todos no arquivo "cadastro_atualizado.txt" (use o 'w' para sobrescrever o arquivo.)
 #
 #  Observação: Use o try/filnaly para abrir e fechar os arquivos. Veja na aula 21- Ecessões como é!
+class cadastro:
+    def __init__(self): 
+        arquivo=open('Aula23/cadastro2.txt', '')

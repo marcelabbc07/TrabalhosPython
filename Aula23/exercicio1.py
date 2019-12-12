@@ -22,14 +22,16 @@ class cliente:
         self.sexo=None
         self.email=None 
         self.telefone=None
-    def adc_dados(self):
-        pessoa=self.dado_bruto.strip().split(';')
-        self.codigo=int(pessoa[0])
-        self.nome=(pessoa[1])
+    def tratamento(self):
+        dados=self.dado_bruto
+        dados=dados.strip()
+        dados=dados.split(';')
+        self.codigo=int(dados[0])
+        self.nome=(dados[1])
         self.idade=int(pessoa[2])
-        self.sexo=(pessoa[3])
-        self.email=(pessoa[4])
-        self.telefone=int(pessoa[5])
+        self.sexo=(dados[3])
+        self.email=(dados[4])
+        self.telefone=int(dados[5])
     def __str__(self):
         texto=f'''
 Código:{self.codigo}

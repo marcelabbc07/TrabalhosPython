@@ -9,6 +9,18 @@
 # - O programa deve garantir que mesmo que ele seja fechado, o sorteio dos alunos só
 # seja reiniciado quando todos os alunos forem sorteados.
 # - Faça um menu para o program e de destaque para o aluno sorteado.
+import random
+sorteado = int( random.randint(1,12) )
+print('='*50,'\n'*3)
+print(f'O numero sorteado foi:{sorteado}')
+with open('Aula28/alunos.txt','r') as alunos:
+    contador=1
+    for i in alunos:   
+        if contador==sorteado:
+            print(f'Aluno:{i}')
+        contador+=1 
+print('\n'*3,'='*50)
+
 
 
 

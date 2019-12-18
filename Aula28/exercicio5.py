@@ -25,3 +25,6 @@
 # 2 - Separar aqueles que gostam de cerveja e salvar no cerveja.txt 
 # 3 - Separar aqueles que gostam de refigerantes e salvar no refrigerante.txt
 # 4 - Separar em arquivos .txt os homens das mulheres
+def cria_dict():
+def gosta_cr():
+def separa_hm():

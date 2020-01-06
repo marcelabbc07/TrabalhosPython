@@ -50,15 +50,15 @@ print(f'Embarcado:{Embarcado}')
 print(f'Terminal:{Terminal}\n')
 Fortwo.clear()
 
-Fortwo.append(Terminal[0])
 Fortwo.append(Terminal[5])
+Fortwo.append(Terminal[0])
 print(f'Fortwo:{Fortwo}')
 del Terminal[0]
 del Terminal[4]
 print(f'Terminal:{Terminal}')
-Embarcado.append(Fortwo[0])
+Embarcado.append(Fortwo[1])
 print(f'Embarcado:{Embarcado}')
-Terminal.append(Fortwo[1])
+Terminal.append(Fortwo[0])
 print(f'Terminal:{Terminal}\n')
 Fortwo.clear()
 
@@ -70,32 +70,33 @@ del Terminal[2]
 print(f'Terminal:{Terminal}')
 Embarcado.append(Fortwo[0])
 Embarcado.append(Fortwo[1])
-print(f'Embarcado:{Embarcado}')
 Terminal.append(Embarcado[0])
 del Embarcado[0]
+print(f'Embarcado:{Embarcado}')
 print(f'Terminal:{Terminal}\n')
 Fortwo.clear()
 
-Fortwo.append(Terminal[0])
 Fortwo.append(Terminal[2])
+Fortwo.append(Terminal[0])
 print(f'Fortwo:{Fortwo}')
 del Terminal[0]
+del Terminal[1]
 print(f'Terminal:{Terminal}')
-Embarcado.append(Fortwo[0])
+Embarcado.append(Fortwo[1])
 print(f'Embarcado:{Embarcado}')
-Terminal.append(Fortwo[1])
+Terminal.append(Fortwo[0])
 print(f'Terminal:{Terminal}\n')
 Fortwo.clear()
 
-Fortwo.append(Terminal[0])
 Fortwo.append(Terminal[1])
+Fortwo.append(Terminal[0])
 print(f'Fortwo:{Fortwo}')
 del Terminal[0]
 del Terminal[0]
 print(f'Terminal:{Terminal}')
-Embarcado.append(Fortwo[0])
+Embarcado.append(Fortwo[1])
 print(f'Embarcado:{Embarcado}')
-Terminal.append(Fortwo[1])
+Terminal.append(Fortwo[0])
 print(f'Terminal:{Terminal}\n')
 Fortwo.clear()
 
@@ -110,14 +111,3 @@ Embarcado.append(Fortwo[1])
 print(f'Embarcado:{Embarcado}')
 print(f'Terminal:{Terminal}\n')
 Fortwo.clear()
-
-
-
-
-
-
-
-
-
-
-

@@ -26,7 +26,7 @@
 # 1-Fortwo move piloto,chefe_servico
 # 2-embarca piloto
 # 3-volta com chefe_servico
-# 4-move chefe_servicob,comissaria1
+# 4-move chefe_servico,comissaria1
 # 5-embarca chefe_servico
 # 6-volta comissaria1
 # 7-move comissaria1,comissaria2
@@ -49,10 +49,97 @@
 Fortwo=[]
 Embarcado=[]
 Terminal=['Piloto','Oficial 1','Oficial 2','Chefe de Serviço','Comissária 1','Comissária 2','Policial','Prisioneiro']
+print(f'Terminal:{Terminal}\n')
 Fortwo.append(Terminal[0])
 Fortwo.append(Terminal[3])
-print(Fortwo)
+print(f'Fortwo:{Fortwo}')
+del Terminal[0]
+del Terminal[2]
+print(f'Terminal:{Terminal}')
+Embarcado.append(Fortwo[0])
+print(f'Embarcado:{Embarcado}')
+Terminal.append(Fortwo[1])
+print(f'Terminal:{Terminal}\n')
 Fortwo.clear()
+
+Fortwo.append(Terminal[6])
+Fortwo.append(Terminal[2])
+print(f'Fortwo:{Fortwo}')
+del Terminal[6]
+del Terminal[2]
+print(f'Terminal:{Terminal}')
+Embarcado.append(Fortwo[0])
+Embarcado.append(Fortwo[1])
+Terminal.append(Embarcado[0])
+del Embarcado[0]
+print(f'Embarcado:{Embarcado}')
+print(f'Terminal:{Terminal}\n')
+Fortwo.clear()
+
+Fortwo.append(Terminal[0])
+Fortwo.append(Terminal[5])
+print(f'Fortwo:{Fortwo}')
+del Terminal[0]
+del Terminal[4]
+print(f'Terminal:{Terminal}')
+Embarcado.append(Fortwo[0])
+print(f'Embarcado:{Embarcado}')
+Terminal.append(Fortwo[1])
+print(f'Terminal:{Terminal}\n')
+Fortwo.clear()
+
+Fortwo.append(Terminal[2])
+Fortwo.append(Terminal[3])
+print(f'Fortwo:{Fortwo}')
+del Terminal[3]
+del Terminal[2]
+print(f'Terminal:{Terminal}')
+Embarcado.append(Fortwo[0])
+Embarcado.append(Fortwo[1])
+print(f'Embarcado:{Embarcado}')
+Terminal.append(Embarcado[0])
+del Embarcado[0]
+print(f'Terminal:{Terminal}\n')
+Fortwo.clear()
+
+Fortwo.append(Terminal[0])
+Fortwo.append(Terminal[2])
+print(f'Fortwo:{Fortwo}')
+del Terminal[0]
+print(f'Terminal:{Terminal}')
+Embarcado.append(Fortwo[0])
+print(f'Embarcado:{Embarcado}')
+Terminal.append(Fortwo[1])
+print(f'Terminal:{Terminal}\n')
+Fortwo.clear()
+
+Fortwo.append(Terminal[0])
+Fortwo.append(Terminal[1])
+print(f'Fortwo:{Fortwo}')
+del Terminal[0]
+del Terminal[0]
+print(f'Terminal:{Terminal}')
+Embarcado.append(Fortwo[0])
+print(f'Embarcado:{Embarcado}')
+Terminal.append(Fortwo[1])
+print(f'Terminal:{Terminal}\n')
+Fortwo.clear()
+
+Fortwo.append(Terminal[0])
+Fortwo.append(Terminal[1])
+print(f'Fortwo:{Fortwo}')
+del Terminal[0]
+del Terminal[0]
+print(f'Terminal:{Terminal}')
+Embarcado.append(Fortwo[0])
+Embarcado.append(Fortwo[1])
+print(f'Embarcado:{Embarcado}')
+print(f'Terminal:{Terminal}\n')
+Fortwo.clear()
+
+
+
+
 
 
 

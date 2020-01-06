@@ -20,32 +20,6 @@
 # 4 - Sempre que acontecer um embarque no avião, apresentar quem está no avião
 # 5 - Deve ser feito em Python
 
-# # tecnica=(piloto,oficial1,oficial2)
-# # cabine=(chefe_servico,comissaria1,comissaria2)
-# # policial,prisioneiro
-# 1-Fortwo move piloto,chefe_servico
-# 2-embarca piloto
-# 3-volta com chefe_servico
-# 4-move chefe_servico,comissaria1
-# 5-embarca chefe_servico
-# 6-volta comissaria1
-# 7-move comissaria1,comissaria2
-# 8-embarca comissaria1
-# 9-volta comissaria2
-# 10-move comissaria2,oficial1
-# 11-embarca comissaria2
-# 12-volta oficial1,piloto
-# 13-move policial,prisioneiro
-# 14-embarca policial,prisioneiro
-# 15-volta comissaria2
-# 16-move comissaria2,oficial1
-# 17-embarca comissaria2
-# 18-volta oficial1
-# 19-move oficial1,piloto
-# 20-embarca piloto
-# 21-volta oficial1
-# 22-move oficial1,oficial2
-# 23-embarca oficial1,oficial2
 Fortwo=[]
 Embarcado=[]
 Terminal=['Piloto','Oficial 1','Oficial 2','Chefe de Serviço','Comissária 1','Comissária 2','Policial','Prisioneiro']

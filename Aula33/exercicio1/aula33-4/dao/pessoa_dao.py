@@ -2,7 +2,7 @@
 import MySQLdb
 from model.pessoa import Pessoa
 
-class PessoaDb:
+class PessoaDao:
     #----- Configurar a conexão
     conexao = MySQLdb.connect(host='localhost', database='aulabd', user='root', passwd='')
     #----- Salva o cursor da conexão em uma variável
@@ -38,3 +38,15 @@ class PessoaDb:
             p1.endereco_id = p[4]
             lista_pessoas.append(p1)
         return lista_pessoas
+    def salvar(self,pessoa):
+        comando=f"INSERT INTO pessoa (NOME,SOBRENOME,IDADE) VALUES ('{pessoa.nome}','{pessoa.sobrenome}','{pessoa.idade}')"
+        self.cursor.execute(comando)
+        self.conexao.commit()   
+    def alterar(self,pessoa):
+        comando=f"UPDATE pessoa SET NOME='{pessoa.nome}',SOBRENOME={pessoa.sobrenome},IDADE='{pessoa.idade}')"
+        self.cursor.execute(comando)
+        self.conexao.commit()
+    def deletar(self,pessoa):
+        comando=f'DELETE FROM pessoa WHERE ID{id}'
+        self.cursor.execute(comando)
+        self.conexao.commit()

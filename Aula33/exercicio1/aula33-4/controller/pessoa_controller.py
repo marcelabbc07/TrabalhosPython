@@ -1,13 +1,27 @@
+import sys
+sys.path.append('')
 from model.pessoa import Pessoa
-from dao.pessoa_db import PessoaDb
+from dao.pessoa_dao import PessoaDao
 
 class PessoaController:
-    p = Pessoa()
-    p_db = PessoaDb()
+    dao=PessoaDao()
 
     def listar_todos(self):
-        return self.p_db.listar_todos()
+        return self.dao.listar_todos
 
-    def exportar(self):
-        lpc = self.p_db.listar_todos()
-        self.p.exportar_txt(lpc)
+    def buscar_id(self,id):
+        return self.dao.buscar_id(id)
+    
+    def salvar(self,pessoa:Pessoa):
+        self.dao.salvar(pessoa)
+
+    def alterar(self,pessoa:Pessoa):
+        self.dao.alterar(pessoa)
+    
+    def deletar(self,id):
+        self.dao.deletar(id)
+
+    controller=PessoaController()
+    p=controller.buscar_id(1)
+    p=controller.listar_todos()
+    print(p)

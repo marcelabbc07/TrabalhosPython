@@ -17,4 +17,4 @@ class EnderecoController:
         self.dao.alterar(endereco)
 
     def deletar(self, id):
-        self.dao.deletar(id)
+        self.dao.deletar(id) 

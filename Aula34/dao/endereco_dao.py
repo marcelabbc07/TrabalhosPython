@@ -19,7 +19,7 @@ class EnderecoDao:
 
     def salvar(self, endereco:Endereco):
         comando = f""" INSERT INTO endereco
-        (
+        ( 
             LOGRADOURO,
             NUMERO,
             COMPLEMENTO,

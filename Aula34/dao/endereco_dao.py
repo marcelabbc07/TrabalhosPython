@@ -59,3 +59,4 @@ class EnderecoDao:
         comando = f"DELETE FROM endereco WHERE ID = {id}"
         self.cursor.execute(comando)
         self.conexao.commit()
+buscar_por_id(1)

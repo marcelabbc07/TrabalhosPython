@@ -19,7 +19,7 @@ class SquadDao:
         return self.cursor.lastrowid
 
     def alterar(self,squad:Squad):
-        self.cursor.execute(f"UPDATE squad SET NOME='{squad.nome}',DESCRICAO='{squad.descricao}',NUMEROPESSOAS={squad.numeropessoas},LINGUAGEMBACKEND='{squad.linguagembackend}',FRAMEWORKFRONTEND='{squad.frameworkfrontend}' WHERE ID={squad.id}")
+        self.cursor.execute(f"UPDATE squad SET NOME='{squad.nome}',DESCRICAO='{squad.descricao}',NUMEROPESSOAS={squad.numeropessoas},LINGUAGEMBACKEND='{squad.linguagembackend}',FRAMEWORKFRONTEND='{squad.frameworkfrontend}' WHERE ID={id}")
         return self.conexao.commit()
 
     def deletar(self,id):

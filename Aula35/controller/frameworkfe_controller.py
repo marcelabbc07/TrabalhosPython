@@ -2,7 +2,7 @@ from dao.squad_dao import SquadDao
 from model.squad import Squad
 from controller.squad_controller import SquadController
 
-class FrameworkFrontEnd:
+class FrameworkFrontEndController:
     dao=FrameworkFrontEndDao()
     squad_controller=SquadController()
 

@@ -1,36 +1,36 @@
 body{
-    background: #ccc;
-    color:#fff;
+    background: coral;
+    color:white;
 }
 #tabela-squad{
     width: 95%;
     margin: 3em auto 2em;
     border-collapse: collapse;
     border-radius: 1em;
-    background: #fff;
+    background: white;
     border-radius: 1em;
 }
 #tabela-squad thead tr th{
-    background: #000;
+    background: black;
     padding: 0.8em;
     text-align: left;
     
 }
 #tabela-squad tbody tr td{
     padding: 0.3em;
-    color:#000;
+    color:black;
 }
 .btn-cadastro{
-    color:#fff;
-    background: #185201;
+    color:white;
+    background: black;
     margin: 2.2 em ;
     padding: 10px;
     text-decoration: none;
 }
 .btn-cadastro:hover{
-    color:#185201;
-    background: #fff;
-    border: 1px solid #185201;
+    color:black;
+    background: white;
+    border: 1px solid black;
 }
 .conteudo{
     width: 80%;
@@ -43,58 +43,77 @@ form{
     width: 60%;
     margin: 2em auto ;
     padding: 3em 4em 2em;
-    border: 1px solid #777777a2;
+    border: 2px solid black;
 }
 .editar{
-    color:#fff;
+    color:white;
     padding: 0.2em;
     text-decoration: none;
-    background:#f8d700;
+    background:black;
 }
 .editar:hover{
-    color:#f8d700;
-    background:#fff;
-    border:1px solid #f8d700;
+    color:black;
+    background:white;
+    border:1px solid black;
 }
 .excluir{
     padding: 0.2em;
     text-decoration: none;
-    color:#fff;
-    background:#f00;
+    color:white;
+    background:black;
 }
 .excluir:hover{
-    color:#f00;
-    background:#fff;
-    border: 1px solid #f00;
+    color:black;
+    background:white;
+    border: 1px solid black;
 }
 
 .salvar{
-    background:  #185201;
-    color: #fff;
+    border-style:none;
+    background:  black;
+    color: white;
     padding: 1em;
     text-transform: uppercase;
     cursor: pointer;
-    width: 10em;
+    width: 6.8em;
 }
 .salvar:hover
 {
-    color:#185201;
-    background: #fff;
-    border: 1px solid #185201;
+    color:black;
+    background: white;
+    border: 1px solid black;
 }
 .limpar{
+    text-decoration: none;
     padding: 0.6em 1em;
-    background: #f8d700;
-    color: #fff;
+    background: black;
+    color: white;
     text-transform: uppercase;
     cursor: pointer;
-    width: 12em;
+    width: 6.8em;
+    font-size: 0.85em;
+    padding: 1em;
 }
 .limpar:hover
 {
-    color:#f8d700;
-    background: #fff;
-    border: 1px solid #f8d700;
+    color:black;
+    background: white;
+    border: 1px solid black;
+}
+.btn{
+    -webkit-appearance: push-button;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    box-sizing: border-box;
+    border-color: buttonface;
+    border-image: initial;
+    border-width: 2px;
+}
+hr{
+    background: #000;
+    border-color: #000;
 }
 input[type='text']{
     padding: 1em 1.5em;
@@ -103,9 +122,10 @@ input[type='text']{
     border-radius: 8px;
 }
 .descricoes{
-    width: 20%;
+    color:#000;
+    width: 30%;
     text-align: right;
-    margin-right: 10px;
+    margin-right: 5px;
     text-transform: uppercase;
 }
 input[type='text'] , .descricoes{

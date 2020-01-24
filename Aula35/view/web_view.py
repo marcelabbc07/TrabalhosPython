@@ -51,7 +51,3 @@ def salvar():
     return redirect('/listar')
 
 app.run(debug=True)
-
-#mysql.padawans.dev
-#padawans(numero)
-#jm2019

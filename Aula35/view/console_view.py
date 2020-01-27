@@ -9,6 +9,7 @@ squad.descricao='Professor'
 squad.numeropessoas=1
 squad.linguagembackend='Python'
 squad.frameworkfrontend='Bootstrap'
+squad.sgbd='MySQL Workbench'
 
 contr=SquadController()
 id_salvo=contr.salvar(squad)

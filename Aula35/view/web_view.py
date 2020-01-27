@@ -44,6 +44,7 @@ def salvar():
     squad.numeropessoas=request.args['numeropessoas']
     squad.linguagembackend=request.args['linguagembackend']
     squad.frameworkfrontend=request.args['frameworkfrontend']
+    squad.sgbd=request.args['sgbd']
     if squad.id==0:
         squad_controller.salvar(squad)
     else:
